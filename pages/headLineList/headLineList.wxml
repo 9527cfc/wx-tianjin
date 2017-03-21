@@ -1,0 +1,27 @@
+
+<!--pages/headLine/headLine.wxml-->
+<view class="container">
+  <view class="headLine box box-tb">
+    <view class="headLineWra box box-lr"  wx:for="{{headLineList}}" bindtap="jumpDetails" data-Id="{{item.id}}">
+      <view class="headLineContent box box-tb box-align-center box-pack-around">
+        <view class="headLineTitle">
+          {{item.title}}
+        </view>
+        <view class="headLineInfor  box box-lr box-pack-between">
+          <view class="headLineSource">
+            日期: {{item.date}}
+          </view>
+          <view class="headLineSource">
+            来源：{{item.source}}
+          </view>
+        </view>
+      </view>
+      <view class="arrowsBox box box-tb box-pack-center">
+        <image src="../../img/arrows.png"></image>
+      </view>
+    </view>
+  </view>
+  <view class="moreButton" bindtap="loadMore">
+    加载更多
+  </view>
+</view>

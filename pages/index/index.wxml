@@ -1,0 +1,92 @@
+
+<!--pages/index/index.wxml-->
+<view class="container">
+  <view class="banner">
+    <swiper class="bannerSwiper" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}">
+      <swiper-item wx:for="{{bannerList}}">
+        <image src="{{item.picture}}" class="slide-image" width="355" height="150" />
+      </swiper-item>
+    </swiper>
+  </view>
+  <view class="nav box box-lr box-pack-center">
+    <view class="navItem box box-tb box-pack-around box-align-center" bindtap="jumpHeadLineList">
+      <image class="navImg" src="../../img/nav1.png"></image>
+      <view>本周推荐</view>
+    </view>
+    <view class="navItem box box-tb box-pack-around box-align-center" bindtap="jumpbaikeList" data-type="baike">
+      <image class="navImg" src="../../img/nav2.png"></image>
+      <view>品味百科</view>
+    </view>
+    <view class="navItem box box-tb box-pack-around box-align-center" bindtap="jumpbaikeList" data-type="travel">
+      <image class="navImg" src="../../img/nav3.png"></image>
+      <view>慢游记</view>
+    </view>
+    <view class="navItem box box-tb box-pack-around box-align-center" bindtap="jumpbaikeList" data-type="artisan">
+      <image class="navImg" src="../../img/nav4.png"></image>
+      <view>匠人</view>
+    </view>
+  </view>
+  <view class="headLine box box-lr">
+    <image class="headLineImg" src="../../img/headline.png"></image>
+    <swiper class="headLineSwiper" vertical="{{vertical}}" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}">
+      <swiper-item wx:for="{{headLineList}}" class="box box-lr box-pack-around box-align-center" bindtap="jumpHeadLineList">
+        <image class="hotdoorImg" src="../../img/hotdoor.png"></image>
+        <view>
+          {{item.title}}
+        </view>
+      </swiper-item>
+    </swiper>
+  </view>
+  <view class="baikeBox box box-tb box-align-center">
+    <view class="moduleTitle">
+      <image src="../../img/baike.png"></image>
+    </view>
+    <view wx:for="{{baikeList}}" data-id="{{item.id}}" bindtap="jumpdetails" class="baikeCon box box-lr baikeCon{{index}}">
+      <image class="baikeImg" src="{{item.picture}}"></image>
+      <view class="baikeWrapper box box-tb box-align-center box-pack-around">
+        <view class="baikeWord1">
+          {{item.title}}
+        </view>
+        <view class="baikeWord2">
+          {{item.context}}
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="artisanBox  box box-tb box-align-center">
+    <view class="moduleTitle">
+      <image src="../../img/artisan.png"></image>
+    </view>
+    <view class="artisanWra" style="display:block;">
+      <scroll-view class="scroll-view_H" scroll-x="true" style="width: 100%;white-space: nowrap;" bindscroll="scrollmove">
+        <block wx:for="{{artisanList}}">
+          <view class="scroll-item" id="{{index}}">
+            <view data-id="{{item.id}}" bindtap="jumpdetails" class="artisanCon box box-tb box-align-center box-pack-around artisanCon{{index}} scroll-view-item_H">
+              <view class="artisanWord1">{{item.title}}</view>
+              <image src="{{item.picture}}" class="artisanImage" />
+              <view class="artisanWord2">{{item.content}}</view>
+            </view>
+          </view>
+        </block>
+      </scroll-view>
+    </view>
+
+    <!--<swiper class="travelSwiper" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}">
+      <swiper-item wx:for="{{traveList}}">
+        <image src="{{item.picture}}" class="slide-image" width="355" height="150" />
+      </swiper-item>
+    </swiper>-->
+  </view>
+  <view class="travelBox box box-tb box-align-center">
+    <view class="moduleTitle box box-tb">
+      <image src="../../img/travel.jpg"></image>
+    </view>
+    <view class="travelCon box box-lr box-pack-center box-align-center travelCon{{index}}" wx:for="{{travelList}}" data-id="{{item.id}}" bindtap="jumpdetails">
+      <view class="travelWrapper box box-tb box-pack-around box-align-center">
+        <view class="travelWord1">{{item.title}}</view>
+        <view class="travelWord2">{{item.context}}</view>
+      </view>
+      <image class="travelImg" src="{{item.picture}}"></image>
+    </view>
+  </view>
+</view>

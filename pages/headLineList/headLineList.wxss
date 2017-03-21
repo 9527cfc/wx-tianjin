@@ -1,0 +1,50 @@
+/* pages/headLine/headLine.wxss */
+
+.headLine {
+  width: 100%;
+}
+
+.headLineWra {
+  height: 200rpx;
+  width: 100%;
+  border-bottom: 1rpx solid #ccc;
+}
+
+.headLineContent {
+  width: 80%;
+  height: 100%;
+}
+
+.headLineTitle {
+  width: 90%;
+  height: 100rpx;
+  line-height: 46rpx;
+  font-weight: 800;
+  font-size: 36rpx;
+}
+
+.headLineInfor {
+  width: 90%;
+  height: 20%;
+  font-size: 26rpx;
+  color: #666;
+}
+
+.arrowsBox {
+  width: 20%;
+  height: 100%;
+}
+
+.arrowsBox image {
+  width: 20%;
+  height: 10%;
+  padding-left: 50rpx;
+}
+
+.moreButton {
+  margin-top: 30rpx;
+  width: 100%;
+  height: 80rpx;
+  text-align: center;
+  line-height: 80rpx;
+}

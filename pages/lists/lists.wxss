@@ -1,0 +1,57 @@
+/* pages/lists/lists.wxss */
+.commonTitle{
+    width: 200rpx;
+    height: 80rpx;
+    text-align: center;
+    line-height: 80rpx;
+    box-sizing: border-box;
+}
+#baikeTitle{
+    background: #ccc;
+}
+#travelTitle{
+    background: #ccc;
+}
+.chooseTitle{
+    border-bottom: 5rpx solid #3399fe; 
+}
+.contentBox{
+    width:100%;
+    min-height:200rpx; 
+}
+.itemContainer{
+    height: 300rpx;
+    width: 300rpx;
+    overflow: hidden;
+    margin-top: 30rpx;
+    font-size: 34rpx;
+}
+.itemContainer .bigImg{
+    height: 200rpx;
+    width: 300rpx;
+    
+}
+.itemContainer .contentName{
+    height: 80rpx;
+    width: 300rpx;
+    line-height: 40rpx;
+    font-size: 24rpx;
+    overflow: hidden;
+}
+.loadMore{
+    margin-top: 30rpx;
+    width: 100%;
+    height:100rpx;
+    text-align: center;
+    line-height: 100rpx;
+}
+
+
+
+
+
+
+
+
+
+

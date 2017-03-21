@@ -1,0 +1,49 @@
+/* pages/details/details.wxss */
+
+.container{
+    width:100%;
+    min-height: 5000rpx;
+}
+.bigTitle{
+    margin-top: 20rpx;
+    /*margin-bottom: 10rpx;*/
+    height: 100rpx;
+    line-height: 50rpx;
+    /*text-align: center;*/
+    width:90%;
+    font-size: 36rpx;
+}
+.content{
+    width: 90%;
+    
+}
+.textView{
+    color: #666;
+    /*height: 50rpx;*/
+    line-height: 36rpx;
+    text-indent: 2em;
+    width:100%;
+    font-size: 26rpx;
+    margin:10rpx 0rpx 10rpx 0rpx;
+}
+.bView{
+    
+    /*height: 50rpx;*/
+    line-height: 36rpx;
+    text-indent: 1em;
+    width:100%;
+    font-size: 28rpx;
+    margin:5rpx 0rpx 5rpx 0rpx;
+}
+.anyImage{
+    width: 100%;
+    margin:10rpx 0rpx 10rpx 0rpx;
+}
+
+
+
+
+
+
+
+

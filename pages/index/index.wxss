@@ -1,0 +1,263 @@
+/* pages/index/index.wxss */
+
+/**index.wxss**/
+
+html, body, page {
+  width: 100%;
+  height: 100%;
+  font-size: 24rpx;
+  background: #e8edf1;
+}
+
+.container {
+  width: 100%;
+  /*display: flex;*/
+}
+
+.banner {
+  width: 100%;
+  height: 400rpx;
+}
+
+.banner .bannerSwiper {
+  width: 100%;
+  height: 100%;
+}
+
+.banner .bannerSwiper swiper-item {
+  width: 100%;
+  height: 100%;
+}
+
+.banner .bannerSwiper swiper-item image {
+  width: 100%;
+  height: 100%;
+}
+
+.nav {
+  height: 200rpx;
+  width: 100%;
+}
+
+.navItem {
+  height: 100%;
+  width: 25%;
+}
+
+.navItem .navImg {
+  padding-top: 10rpx;
+  width: 60%;
+  height: 60%;
+}
+
+.navItem text {
+  text-align: center;
+  font-size: 32rpx;
+}
+
+.headLine {
+  width: 100%;
+  height: 100rpx;
+  background: #fff;
+}
+
+.headLine .headLineImg {
+  width: 13%;
+  height: 100%;
+  padding-left: 20rpx;
+}
+
+.headLine .headLineSwiper {
+  padding-left: 10rpx;
+  width: 80%;
+  height: 100%;
+}
+
+.headLine .headLineSwiper swiper-item {
+  width: 100%;
+  height: 100%;
+}
+
+.headLine .headLineSwiper swiper-item .hotdoorImg {
+  width: 10%;
+  height: 30%;
+}
+
+.headLine .headLineSwiper  swiper-item view {
+  /*text-align: center;*/
+  width: 85%;
+  height: 100%;
+  line-height: 100rpx;
+  font-size: 26rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.baikeBox {
+  min-height: 570rpx;
+  width: 100%;
+}
+
+.moduleTitle {
+  height: 80rpx;
+  width: 90%;
+}
+
+.moduleTitle image {
+  height: 100%;
+  width: 100%;
+}
+
+.baikeBox .baikeCon {
+  height: 230rpx;
+  width: 90%;
+  /*margin-bottom: 30rpx;*/
+  background: #fff;
+}
+
+.baikeCon0 {
+  margin-bottom: 30rpx;
+}
+
+.baikeCon .baikeImg {
+  width: 40%;
+  height: 100%;
+}
+
+.baikeWrapper {
+  width: 60%;
+  height: 100%;
+}
+
+.baikeWord1 {
+  width: 90%;
+  height: 64rpx;
+  overflow: hidden;
+  font-size: 28rpx;
+  line-height: 32rpx;
+}
+
+.baikeWord2 {
+  width: 90%;
+  height: 100rpx;
+  font-size: 24rpx;
+  line-height: 26rpx;
+  color: #666;
+  overflow: hidden;
+}
+
+.artisanBox {
+  height: 580rpx;
+  width: 100%;
+  overflow: hidden;
+}
+
+.scroll-view_H {
+  white-space: nowrap;
+  display: flex;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+
+.artisanWra {
+  height: 580rpx;
+  width: 90%;
+}
+
+.scroll-item {
+  width: 700rpx;
+  height: 500rpx;
+  display: inline-block;
+}
+
+.artisanCon {
+  width: 700rpx;
+  height: 500rpx;
+  background: #fff;
+}
+
+.artisanCon .artisanWord1 {
+  width: 90%;
+  height: 50rpx;
+  line-height: 50rpx;
+  overflow: hidden;
+  padding-top: 10rpx;
+  font-size: 28rpx;
+}
+
+.artisanCon .artisanWord2 {
+  margin-top: 10rpx;
+  width: 90%;
+  height: 50rpx;
+  line-height: 40rpx;
+  font-size: 24rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #666;
+}
+
+.artisanCon .artisanImage {
+  width: 86%;
+  margin-left: -20rpx;
+  height: 60%;
+}
+
+/*.travelSwiper {
+  width: 100%;
+  height: 500rpx;
+  background: blue;
+}
+
+.travelSwiper swiper-item {
+  width: 100%;
+  height: 100%;
+}
+
+.travelSwiper swiper-item image {
+  width: 100%;
+  height: 100%;
+}*/
+
+.travelBox {
+  height: 1000rpx;
+  width: 100%;
+}
+
+.travelCon {
+  width: 90%;
+  height: 300rpx;
+  background: #fff;
+  margin-bottom: 20rpx;
+}
+
+.travelCon .travelImg {
+  height: 80%;
+  width: 40%;
+}
+
+.travelCon .travelWrapper {
+  height: 80%;
+  width: 50%;
+}
+
+.travelWrapper .travelWord1 {
+  width: 90%;
+  height: 100rpx;
+  overflow: hidden;
+  font-size: 28rpx;
+}
+
+.travelWrapper .travelWord2 {
+  width: 90%;
+  height: 150rpx;
+  overflow: hidden;
+  color: #666;
+  font-size: 24rpx;
+  line-height: 30rpx;
+}

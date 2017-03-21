@@ -1,0 +1,44 @@
+
+<!--pages/lists/lists.wxml-->
+<view class="container">
+  <view class="top box box-lr box-pack-around titleBox">
+    <view class="commonTitle flex {{baikePitch}}" data-title='baike' bindtap="clickChoose">
+      品味百科
+    </view>
+    <view class="commonTitle flex {{travelPitch}}" data-title='travel' bindtap="clickChoose">
+      慢游记
+    </view>
+    <view class="commonTitle flex {{artisanPitch}}" data-title='artisan' bindtap="clickChoose">
+      匠人
+    </view>
+  </view>
+  <view class="contentBox">
+    <view wx:if="{{baikePitch}}" class='baikeBox box box-lr box-pack-around box-wrap'>
+      <view wx:for="{{dataList}}" class="itemContainer" data-id="{{item.id}}" bindtap="toDetails">
+        <image src="{{item.picture}}" class="bigImg"></image>
+        <view class="contentBox">
+          <view class="contentName"> {{item.title}} </view>
+        </view>
+      </view>
+    </view>
+    <view wx:if="{{artisanPitch}}" class='artisanBox box box-lr box-pack-around box-wrap'>
+      <view wx:for="{{dataList}}" class="itemContainer" data-id="{{item.id}}" bindtap="toDetails">
+        <image src="{{item.picture}}" class="bigImg"></image>
+        <view class="contentBox">
+          <view class="contentName"> {{item.title}} </view>
+        </view>
+      </view>
+    </view>
+    <view wx:if="{{travelPitch}}" class='travelBox box box-lr box-pack-around box-wrap'>
+      <view wx:for="{{dataList}}" class="itemContainer" data-id="{{item.id}}" bindtap="toDetails">
+        <image src="{{item.picture}}" class="bigImg"></image>
+        <view class="contentBox">
+          <view class="contentName"> {{item.title}} </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="loadMore" bindtap="loadMore">
+    <text>加载更多</text>
+  </view>
+</view>

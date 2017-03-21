@@ -1,0 +1,17 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/details/details",
+    "pages/headLineList/headLineList",
+    "pages/lists/lists",
+    "pages/user/user",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "天津旅游",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": false
+  }
+}

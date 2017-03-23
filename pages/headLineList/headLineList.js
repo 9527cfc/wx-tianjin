@@ -14,16 +14,15 @@ Page({
     var that = this;
     wx.request({
       url: 'https://bobtrip.com/newtj/menu/port/getRecommend.action', //仅为示例，并非真实的接口地址
-
       header: {
         'content-type': 'application/json'
       },
       success: function (res) {
         console.log("请求成功");
         var li = res.data.reclist;
-        console.log(li);
         li.forEach(function (value, index, array) {
           value.date = that.getLocalTime(value.date.time)//时间戳转换
+          // value.date = that.getDay(value.date.time)
         })
         that.setData({
           headLineList: li
@@ -50,8 +49,8 @@ Page({
         var li = res.data.list;
         li.forEach(function (value, index, array) {
           value.date = that.getLocalTime(value.date.time)
+          // value.date = that.getDay(value.date.time)
         })
-        console.log(li);
         that.setData({
           headLineList: that.data.headLineList.concat(li),
           CurrentPage: that.data.CurrentPage + 1
@@ -67,6 +66,19 @@ Page({
     wx.navigateTo({
       url: '../details/details?id=' + Id
     })
+  },
+  getDay: function (time) {
+    var nowDate = new Date();
+    var oldDate = new Date(time);
+    var nTime = nowDate.getTime() - oldDate.getTime();
+    console.log(nTime);
+    var day = Math.floor(nTime / 86400000);
+    if (day == 0) {
+      return "今天";
+    } else if (day > 0) {
+      return day + "天前";
+    }
+
   },
   getLocalTime: function (nS) {
     // var time = new Date(parseInt(nS) *1000);

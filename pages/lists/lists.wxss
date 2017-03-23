@@ -5,6 +5,7 @@
     text-align: center;
     line-height: 80rpx;
     box-sizing: border-box;
+    font-size: 38rpx;
 }
 #baikeTitle{
     background: #ccc;
@@ -35,7 +36,7 @@
     height: 80rpx;
     width: 300rpx;
     line-height: 40rpx;
-    font-size: 24rpx;
+    font-size: 26rpx;
     overflow: hidden;
 }
 .loadMore{

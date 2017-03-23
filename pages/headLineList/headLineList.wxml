@@ -22,6 +22,6 @@
     </view>
   </view>
   <view class="moreButton" bindtap="loadMore">
-    加载更多
+    点击加载更多
   </view>
 </view>

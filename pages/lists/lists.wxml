@@ -39,6 +39,6 @@
     </view>
   </view>
   <view class="loadMore" bindtap="loadMore">
-    <text>加载更多</text>
+    点击加载更多
   </view>
 </view>
